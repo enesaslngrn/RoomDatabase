@@ -1,5 +1,6 @@
 package com.example.roomdatabase
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
@@ -9,5 +10,10 @@ data class User(
     val id : Int = 0,
     val firstName : String,
     val secondName : String,
-    val age : Int
+    val age : Int,
+    @ColumnInfo(name = "test", defaultValue = "test")
+    val test : String // Yeni eklenecek field
 )
+
+
+

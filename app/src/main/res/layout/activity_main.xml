@@ -57,6 +57,7 @@
             android:layout_height="wrap_content"
             android:text="Add User" />
 
+
         <Button
             android:id="@+id/btnUpdateUser"
             android:layout_width="match_parent"
@@ -73,13 +74,51 @@
             android:id="@+id/btnShowUsers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Show Users" />
+            android:text="Show All" />
 
         <Button
             android:id="@+id/btnDeleteAll"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Delete Users" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:padding="4dp"
+                android:textColor="@android:color/black">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/ivTest"
+                android:layout_width="80dp"
+                android:layout_height="80dp">
+
+            </ImageView>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etTestName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Test Name" />
+
+        <Button
+            android:id="@+id/btnAddTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Test" />
 
     </LinearLayout>
 

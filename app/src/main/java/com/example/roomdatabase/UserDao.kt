@@ -27,4 +27,11 @@ interface UserDao { // Data access object (DAO) - CRUD işlemlerinden sorumlu
     @Query("DELETE FROM user_table")
     suspend fun deleteAllUsers()
 
+    // Test
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    suspend fun insertTest(test: Test)
+
+    @Query("SELECT * FROM test_table ORDER BY id ASC")
+    fun getAllTests(): LiveData<List<Test>>
+
 }
